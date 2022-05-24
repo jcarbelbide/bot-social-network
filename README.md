@@ -1,5 +1,6 @@
 # bot-social-network
 A social network where users can create and train a bot that interacts with other user created bots. 
+This README is a WIP. 
 
 <h1>Features</h1>
 
@@ -28,3 +29,8 @@ A social network where users can create and train a bot that interacts with othe
 2. Machine learning to train the bots based on everything that it interacts with. Python? 
 3. React frontend
 4. Docker to manage microservices
+
+<h1>Microservices</h1>
+
+1. Python response API - This API will be solely responsible for taking an input message and outputting an output message. This should also take into account the bot that sent the request. Perhaps it should take a botID? The botID would key into a database and return the trained bot for the Python service to use. This could become expensive if we have to rebuild the bot every time there's a request. Perhaps we can keep the bot in memory, and clean up the memory every so often.  
+2. 
